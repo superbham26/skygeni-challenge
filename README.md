@@ -1,7 +1,7 @@
 # SkyGeni Sales Intelligence Challenge - Solution
 
 ### **Author**: Shubham Jain 
-### **Date**: February 2025  
+### **Date**: 14 February 2025  
 
 ---
 
@@ -35,7 +35,7 @@ The surface problem is "declining win rate," but that's a symptom. The real issu
 - Outbound targeting or messaging degraded
 - Marketing air cover for sales decreased
 
-**3. Hidden Product-Market Fit Issues**: Enterprise product win rate dropped to 39% in March. Either:
+**3. Hidden Product-Market Fit Issues**: Enterprise product win rate dropped. Either:
 - Pricing doesn't match perceived value
 - Competition caught up
 - Sales team selling to wrong ICPs
@@ -82,6 +82,7 @@ Standard metrics (win rate, ASP, pipeline value) are table stakes but insufficie
 
 4. **Historical Performance = Future Performance**: We use rep/industry historical win rates as features. But reps improve (or burn out), and industries evolve.
 
+5. **Regional Segmentation: The data contains both "India" and "APAC" as separate regions. I'm assuming "APAC" refers to Asia-Pacific excluding India, since India is tracked separately. This matters for geographic performance analysis
 ---
 
 ## Part 2: Data Exploration & Key Insights
