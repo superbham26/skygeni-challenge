@@ -501,7 +501,7 @@ git clone https://github.com/superbham26/skygeni-challenge
 cd skygeni-challenge
 
 # Install dependencies
-pip install pandas numpy scikit-learn matplotlib seaborn
+pip install -r requirements.txt
 
 # Verify data file
 ls -lh skygeni_sales_data.csv
