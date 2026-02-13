@@ -8,7 +8,6 @@ This module builds a probabilistic revenue forecast that:
 3. Identifies which deals are at risk
 4. Recommends actions to hit targets
 
-STANDOUT FEATURE: Multi-scenario forecasting with deal-level interventions
 """
 
 import pandas as pd
