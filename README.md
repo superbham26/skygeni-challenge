@@ -1,7 +1,7 @@
 # SkyGeni Sales Intelligence Challenge - Solution
 
-**Author**: Shubham Jain 
-**Date**: February 2025  
+### **Author**: Shubham Jain 
+### **Date**: February 2025  
 
 ---
 
@@ -319,7 +319,7 @@ This is **leverage thinking**—not all deals are equal.
 
 ### Example Alerts
 
-** Critical Alert (Slack)**:
+Critical Alert (Slack):
 ```
 Deal Alert: Acme Corp ($250K)
 Status: Stalled in "Negotiation" for 45 days
@@ -328,7 +328,7 @@ Action: Schedule executive call or consider discount
 Assigned to: @jane_sales_rep
 ```
 
-** Weekly Forecast (Email to CRO)**:
+Weekly Forecast (Email to CRO):
 ```
 Subject: Week of Feb 10 - Revenue Forecast
 
@@ -497,7 +497,7 @@ Probably not without retraining.
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
+git clone https://github.com/superbham26/skygeni-challenge
 cd skygeni-challenge
 
 # Install dependencies
