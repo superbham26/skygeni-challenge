@@ -658,18 +658,15 @@ python generate_summary.py
 ║              Executive Summary - H1 2024 Analysis          ║
 ╚════════════════════════════════════════════════════════════╝
 
-📊 SITUATION
+SITUATION
 Win rate declined from 47.5% (Q4 2023) to 46.7% (Q1 2024)...
 
-🔍 ROOT CAUSES (3 Critical Issues)
+ROOT CAUSES (3 Critical Issues)
 1. DEAL COMPLEXITY INCREASING
    • Sales cycles lengthened 18% (60 → 71 days)
    → Action: Implement velocity checkpoints...
 ```
 
----
-
-These bonus features demonstrate that I'm not just building models—I'm building **decision intelligence systems** that business leaders can actually use.
 
 ---
 
@@ -684,5 +681,3 @@ If I were to sum up the entire solution in one sentence:
 **"Don't just predict revenue—predict what actions will change revenue."**
 
 That's the difference between analytics and intelligence.
-
----
