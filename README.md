@@ -497,33 +497,44 @@ Probably not without retraining.
 
 ```bash
 # Clone repository
-git clone https://github.com/superbham26/skygeni-challenge
+git clone 
 cd skygeni-challenge
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Verify data file
+# Verify data file is present
 ls -lh skygeni_sales_data.csv
 ```
 
 ### Run Analysis
 
 ```bash
-# Part 2: Exploratory Analysis & Insights
+# Step 1: Exploratory Analysis & Insights (Part 2)
 python analysis.py
 
-# Part 3: Revenue Forecasting Model
+# Step 2: Revenue Forecasting Model (Part 3)
 python forecast_model.py
+
+# Step 3: Generate Visualizations (Bonus)
+python create_visualizations.py
+
+# Step 4: Generate Executive Summary (Bonus)
+python generate_summary.py
 ```
 
 ### Output Files
 
+After running all scripts, you'll have:
 - `processed_sales_data.csv` - Cleaned data with engineered features
 - `monthly_performance.csv` - Win rate trends by month
 - `revenue_forecast_june_july.csv` - Deal-level predictions for June-July 2024
 - `forecast_scenarios.json` - P10/P50/P90 revenue scenarios
 - `forecaster_model.pkl` - Trained model (reusable)
+- `viz_1_win_rate_trends.png` - Win rate analysis dashboard
+- `viz_2_forecast_scenarios.png` - Forecast scenarios visualization
+- `viz_3_channel_product_performance.png` - Channel/product analysis
+- `EXECUTIVE_SUMMARY.txt` - One-page CRO report
 
 ---
 
@@ -560,19 +571,105 @@ This gives CRO a *distribution* of outcomes, not a false sense of precision.
 
 ```
 skygeni-challenge/
-├── README.md                         
+├── README.md                          ← This file
 ├── analysis.py                        ← Part 2: EDA & Insights
 ├── forecast_model.py                  ← Part 3: Revenue Forecasting
+├── create_visualizations.py           ← Dashboard generator
+├── generate_summary.py                ← Executive report generator
 ├── skygeni_sales_data.csv             ← Input data
 ├── requirements.txt                   ← Python dependencies
-├── outputs/
-   ├── processed_sales_data.csv
-   ├── monthly_performance.csv
-   ├── revenue_forecast_june_july.csv
-   ├── forecast_scenarios.json
-   └── forecaster_model.pkl
+├── outputs/                           ← after running the codes
+│   ├── processed_sales_data.csv
+│   ├── monthly_performance.csv
+│   ├── revenue_forecast_june_july.csv
+│   ├── forecast_scenarios.json
+│   ├── forecaster_model.pkl
+│   ├── viz_1_win_rate_trends.png
+│   ├── viz_2_forecast_scenarios.png
+│   ├── viz_3_channel_product_performance.png
+│   └── EXECUTIVE_SUMMARY.txt
 
 ```
+
+---
+
+## Bonus Features
+
+Beyond the core requirements, I've added two additional capabilities that make this submission production-ready:
+
+### 1. Executive Dashboard Generator (`create_visualizations.py`)
+
+**What it does**: Automatically generates three professional PNG dashboards that tell the complete story visually.
+
+**Visualizations created**:
+
+**viz_1_win_rate_trends.png** - Win Rate Analysis
+- Monthly win rate trend from 2023-2024
+- Q4 2023 vs Q1 2024 comparison lines
+- Deal volume vs revenue overlay
+- Highlights the March 2024 decline
+
+**viz_2_forecast_scenarios.png** - Forecast Scenarios
+- P10/P50/P90 revenue scenario comparison
+- Gap-to-target visualization
+- Deal risk segmentation (High/Medium/Low)
+- Revenue by risk category
+
+**viz_3_channel_product_performance.png** - Channel & Product Analysis
+- Win rate by lead source over time
+- Product type performance trends
+- Identifies Outbound decline and Enterprise struggles
+
+**Why it matters**: CROs don't read code—they read dashboards. These visualizations can go directly into board decks, weekly reviews, or investor updates.
+
+**Run it**:
+```bash
+python create_visualizations.py
+```
+
+---
+
+### 2. Executive Summary Generator (`generate_summary.py`)
+
+**What it does**: Auto-generates a one-page executive summary in plain business language.
+
+**Output**: `EXECUTIVE_SUMMARY.txt`
+
+**What's included**:
+-  Situation overview (win rate decline, context)
+-  Root causes (3 critical issues with metrics)
+-  Revenue forecast (P10/P50/P90 scenarios)
+-  Priority deals (highest leverage opportunities)
+-  Immediate actions (next 7 days)
+-  Long-term recommendations (30-90 days)
+-  Appendix (custom metrics, model performance)
+
+**Why it matters**: Sales leaders need the bottom line upfront. This report can be forwarded to the CEO, sent to the board, or used in QBRs. No technical knowledge required.
+
+**Run it**:
+```bash
+python generate_summary.py
+```
+
+**Sample output**:
+```
+╔════════════════════════════════════════════════════════════╗
+║           SKYGENI SALES INTELLIGENCE REPORT                ║
+║              Executive Summary - H1 2024 Analysis          ║
+╚════════════════════════════════════════════════════════════╝
+
+📊 SITUATION
+Win rate declined from 47.5% (Q4 2023) to 46.7% (Q1 2024)...
+
+🔍 ROOT CAUSES (3 Critical Issues)
+1. DEAL COMPLEXITY INCREASING
+   • Sales cycles lengthened 18% (60 → 71 days)
+   → Action: Implement velocity checkpoints...
+```
+
+---
+
+These bonus features demonstrate that I'm not just building models—I'm building **decision intelligence systems** that business leaders can actually use.
 
 ---
 
