@@ -82,7 +82,7 @@ Standard metrics (win rate, ASP, pipeline value) are table stakes but insufficie
 
 4. **Historical Performance = Future Performance**: We use rep/industry historical win rates as features. But reps improve (or burn out), and industries evolve.
 
-5. **Regional Segmentation: The data contains both "India" and "APAC" as separate regions. I'm assuming "APAC" refers to Asia-Pacific excluding India, since India is tracked separately. This matters for geographic performance analysis
+5. **Regional Segmentation**: The data contains both "India" and "APAC" as separate regions. I'm assuming "APAC" refers to Asia-Pacific excluding India, since India is tracked separately. This matters for geographic performance analysis
 ---
 
 ## Part 2: Data Exploration & Key Insights
